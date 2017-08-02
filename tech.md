@@ -1,7 +1,7 @@
 # Android standart architecture
 https://developer.android.com/topic/libraries/architecture/index.html
 
-#Technologies
+# Technologies
 
 ## DI
 Dagger2
