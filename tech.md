@@ -1,20 +1,20 @@
 # Android standart architecture
 https://developer.android.com/topic/libraries/architecture/index.html
 
-# Technologies
+## Technologies
 
-## DI
+### DI
 Dagger2
 
-## Persistence
+### Persistence
 SQL Lite
 
-## ORM
+### ORM
 Room
 
-## Synchronisation between clients
+### Synchronisation between clients
 Firebase Live DB
 
-## Authentication
+### Authentication
 Firebase Web Authentication
 
