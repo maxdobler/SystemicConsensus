@@ -3,6 +3,9 @@ https://developer.android.com/topic/libraries/architecture/index.html
 
 ## Technologies
 
+### JVM Language
+Kotlin
+
 ### DI
 Dagger2
 
