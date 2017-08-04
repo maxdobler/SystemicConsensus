@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "111664435598",
+    "firebase_url": "https://systemicconsensus.firebaseio.com",
+    "project_id": "systemicconsensus",
+    "storage_bucket": "systemicconsensus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111664435598:android:acca49abb15327b4",
+        "android_client_info": {
+          "package_name": "de.maxdobler.systemicconsensus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111664435598-eh6elb8tjqrl7te67qqpnrkldkspbmvs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwH0nQU4YdW_OdbGhwuF81sdYOtY7WHeg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

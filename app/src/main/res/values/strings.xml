@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Systemic Consensus</string>
+
+    <string name="new_group_fragment_create_button">Create</string>
+</resources>
