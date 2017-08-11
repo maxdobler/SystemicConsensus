@@ -3,7 +3,7 @@ package de.maxdobler.systemicconsensus
 import android.app.Application
 import android.content.Context
 import dagger.Component
-import de.maxdobler.systemicconsensus.group.NewGroupViewModel
+import de.maxdobler.systemicconsensus.team.TeamViewModel
 import javax.inject.Singleton
 
 @Component(
@@ -18,5 +18,5 @@ interface AppComponent {
     fun context(): Context
     fun database(): AppDatabase
 
-    fun inject(into: NewGroupViewModel)
+    fun inject(into: TeamViewModel)
 }

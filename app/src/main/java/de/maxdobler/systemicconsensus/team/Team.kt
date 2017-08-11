@@ -1,11 +1,11 @@
-package de.maxdobler.systemicconsensus.group
+package de.maxdobler.systemicconsensus.team
 
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 
 
 @Entity
-class Group {
+class Team {
     @PrimaryKey(autoGenerate = true) var id = 0L
     var name = ""
 

@@ -1,26 +1,30 @@
-package de.maxdobler.systemicconsensus.group
+package de.maxdobler.systemicconsensus.team
 
 import android.app.Application
 import android.arch.lifecycle.AndroidViewModel
+import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import de.maxdobler.systemicconsensus.AppDatabase
 import de.maxdobler.systemicconsensus.MyApplication
 import javax.inject.Inject
 
 
-class NewGroupViewModel constructor(application: Application) : AndroidViewModel(application) {
+class TeamViewModel constructor(application: Application) : AndroidViewModel(application) {
+
     @Inject
     lateinit var db: AppDatabase
 
+    var teams: LiveData<List<Team>> = MutableLiveData()
+
     init {
         (application as MyApplication).component.inject(this)
+        teams = db.teamDao.loadAll()
     }
 
-    val name: MutableLiveData<String> = MutableLiveData()
     fun createNewGroup(name: String) {
-        Thread({
-            db.groupDao.insert(Group(name));
-        })
+        Thread {
+            db.teamDao.insert(Team(name));
+        }
 
     }
 }
