@@ -6,6 +6,7 @@ import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import de.maxdobler.systemicconsensus.AppDatabase
 import de.maxdobler.systemicconsensus.MyApplication
+import org.jetbrains.anko.doAsync
 import javax.inject.Inject
 
 
@@ -22,9 +23,8 @@ class TeamViewModel constructor(application: Application) : AndroidViewModel(app
     }
 
     fun createNewGroup(name: String) {
-        Thread {
-            db.teamDao.insert(Team(name));
+        doAsync {
+            db.teamDao.insert(Team(name))
         }
-
     }
 }

@@ -25,7 +25,8 @@ android {
 ext {
     AACVersion = '1.0.0-alpha8'
     daggerVersion = '2.11'
-    supportLibVersion = '26.0.0'
+    supportLibVersion = '26.0.1'
+    anko_version = '0.10.0'
 }
 
 dependencies {
@@ -48,6 +49,8 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:$daggerVersion"
     //Firebase
     implementation 'com.google.firebase:firebase-auth:11.0.4'
+    //Anko
+    implementation "org.jetbrains.anko:anko-commons:$anko_version"
     //Testing
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.0'

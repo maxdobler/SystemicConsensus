@@ -5,6 +5,7 @@ import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
 import de.maxdobler.systemicconsensus.team.NewTeamActivity
 import de.maxdobler.systemicconsensus.team.TeamListRecyclerAdapter
 import de.maxdobler.systemicconsensus.team.TeamViewModel
@@ -23,6 +24,7 @@ class MainActivity : LifecycleActivity() {
             startActivity(intent)
         }
         val teamsListRecyclerAdapter = TeamListRecyclerAdapter()
+        teamList.layoutManager = LinearLayoutManager(this)
         teamList.adapter = teamsListRecyclerAdapter
         viewModel.teams.observe(this, Observer {
             it?.let { teamsListRecyclerAdapter.replaceItems(it) }
