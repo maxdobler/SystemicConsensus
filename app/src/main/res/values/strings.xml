@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Systemic Consensus</string>
 
-    <string name="new_team_activity_create_button">Create</string>
-    <string name="new_team_activity_name_title">Name of Team</string>
+    <string name="new_team_activity_create_button">Create Group</string>
+    <string name="new_team_activity_name_title">Name of Group</string>
+    <string name="activity_main_new_team_button">new Group</string>
 </resources>
