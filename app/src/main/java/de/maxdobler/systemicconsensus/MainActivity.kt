@@ -26,7 +26,6 @@ class MainActivity : AppCompatLifecycleActivity() {
     }
 
     private fun setupToolbar() {
-        toolbar.title = getString(R.string.main_activity_toolbar_title)
         setSupportActionBar(toolbar)
     }
 

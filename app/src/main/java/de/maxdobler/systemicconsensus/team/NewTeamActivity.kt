@@ -20,8 +20,8 @@ class NewTeamActivity : AppCompatLifecycleActivity() {
     }
 
     private fun setupToolbar() {
-        toolbar.title = getString(R.string.new_team_activity_toolbar_title)
         setSupportActionBar(toolbar)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun setupCreateTeamButton() {
