@@ -10,6 +10,7 @@ import de.maxdobler.systemicconsensus.team.NewTeamActivity
 import de.maxdobler.systemicconsensus.team.TeamListRecyclerAdapter
 import de.maxdobler.systemicconsensus.team.TeamViewModel
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.toolbar.*
 
 class MainActivity : AppCompatLifecycleActivity() {
     private lateinit var viewModel: TeamViewModel
@@ -19,9 +20,14 @@ class MainActivity : AppCompatLifecycleActivity() {
         setContentView(R.layout.activity_main)
         viewModel = ViewModelProviders.of(this).get(TeamViewModel::class.java)
 
-        setSupportActionBar(toolbar)
+        setupToolbar()
         setupNewTeamButton()
         setupTeamList()
+    }
+
+    private fun setupToolbar() {
+        toolbar.title = getString(R.string.main_activity_toolbar_title)
+        setSupportActionBar(toolbar)
     }
 
     private fun setupNewTeamButton() {

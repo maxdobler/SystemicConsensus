@@ -5,4 +5,5 @@
     <string name="new_team_activity_name_title">Name of Group</string>
     <string name="activity_main_new_team_button">new Group</string>
     <string name="main_activity_toolbar_title">Groups</string>
+    <string name="new_team_activity_toolbar_title">Create Group</string>
 </resources>

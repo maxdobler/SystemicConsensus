@@ -11,4 +11,5 @@ abstract class AppCompatLifecycleActivity : AppCompatActivity(), LifecycleRegist
     override fun getLifecycle(): LifecycleRegistry {
         return mRegistry
     }
+
 }
