@@ -9,4 +9,4 @@
     android:elevation="4dp"
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-    tools:showIn="@layout/activity_main" />
+    tools:showIn="@layout/team_activity" />

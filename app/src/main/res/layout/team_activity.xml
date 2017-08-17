@@ -4,23 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="de.maxdobler.systemicconsensus.MainActivity">
+    tools:context="de.maxdobler.systemicconsensus.team.TeamActivity">
 
     <include layout="@layout/toolbar" />
-
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/teamList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         android:layout_weight="1" />
 
     <Button
         android:id="@+id/newTeamButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity_main_new_team_button" />
+        android:text="@string/team_activity_new_team_button" />
 </LinearLayout>

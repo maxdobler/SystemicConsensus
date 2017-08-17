@@ -1,23 +1,23 @@
-package de.maxdobler.systemicconsensus
+package de.maxdobler.systemicconsensus.team
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
 import android.content.Intent
 import android.os.Bundle
+import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
+import de.maxdobler.systemicconsensus.R
 import de.maxdobler.systemicconsensus.support.AppCompatLifecycleActivity
-import de.maxdobler.systemicconsensus.team.NewTeamActivity
-import de.maxdobler.systemicconsensus.team.TeamListRecyclerAdapter
-import de.maxdobler.systemicconsensus.team.TeamViewModel
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.team_activity.*
 import kotlinx.android.synthetic.main.toolbar.*
 
-class MainActivity : AppCompatLifecycleActivity() {
+
+class TeamActivity : AppCompatLifecycleActivity() {
     private lateinit var viewModel: TeamViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.team_activity)
         viewModel = ViewModelProviders.of(this).get(TeamViewModel::class.java)
 
         setupToolbar()
@@ -37,9 +37,13 @@ class MainActivity : AppCompatLifecycleActivity() {
     }
 
     private fun setupTeamList() {
+        val layoutManager = LinearLayoutManager(this)
+        teamList.addItemDecoration(DividerItemDecoration(teamList.getContext(), layoutManager.getOrientation()))
+        teamList.layoutManager = layoutManager
+
         val teamsListRecyclerAdapter = TeamListRecyclerAdapter()
-        teamList.layoutManager = LinearLayoutManager(this)
         teamList.adapter = teamsListRecyclerAdapter
+
         viewModel.teams.observe(this, Observer {
             it?.let { teamsListRecyclerAdapter.replaceItems(it) }
         })

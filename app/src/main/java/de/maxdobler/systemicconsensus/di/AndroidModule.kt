@@ -1,4 +1,4 @@
-package de.maxdobler.systemicconsensus
+package de.maxdobler.systemicconsensus.di
 
 import android.app.Application
 import android.content.Context

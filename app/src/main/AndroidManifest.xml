@@ -14,8 +14,8 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".MainActivity"
-            android:label="@string/main_activity_toolbar_title">
+            android:name=".team.TeamActivity"
+            android:label="@string/team_activity_toolbar_title">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,11 +25,11 @@
         <activity
             android:name=".team.NewTeamActivity"
             android:label="@string/new_team_activity_toolbar_title"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".team.TeamActivity"
             android:windowSoftInputMode="adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".team.TeamActivity" />
 
         </activity>
     </application>
