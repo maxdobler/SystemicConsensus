@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LargeFont">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/light_bg_dark_primary_text</item>
+    </style>
+
+    <style name="MediumFont">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/light_bg_dark_primary_text</item>
+    </style>
+
+    <style name="SmallFont">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/light_bg_dark_primary_text</item>
+    </style>
+</resources>
